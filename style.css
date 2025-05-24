@@ -1,0 +1,66 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(135, 207, 235, 0.482) ;
+    height: 100vh;
+    flex-direction: column ;
+    font-family: "Outfit", sans-serif;
+    gap: 50px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white ;
+    text-align: center;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.637);
+}
+
+.card:hover {
+  animation: scalePulse 1s infinite alternate;
+}
+
+
+@keyframes scalePulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+.card img {
+    width: 230px;
+    border-radius: 10px;
+}
+
+.h1{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.h2{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 0px;
+    color: rgb(130, 129, 129);
+}
+ 
+
+
